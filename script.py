@@ -33,11 +33,11 @@ selected_food = foods[food_order]
 drink_order = int(input('Enter drink item number: '))
 selected_drink = drinks[drink_order]
 
-# Take input from the console and assign it to the count variable
+
 count = int(input('How many meals would you like to purchase? (10% off for 3 or more): '))
 
-# Call the get_total_price method from selected_food and from selected_drink
+
 result = selected_food.get_total_price(count) + selected_drink.get_total_price(count)
 
-# Output 'Your total is $____'
+
 print('Your total is $' + str(result))
